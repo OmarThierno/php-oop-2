@@ -13,6 +13,12 @@ $catCategory = new Category("Gatti");
 $catCategory->setIcon("fa-solid fa-cat");
 var_dump($catCategory);
 
+try{
+  $mouseCategory = new Category("Mouse");
+} catch (Exception $error) {
+  echo "Eccezzione:" . $error->getMessage();
+}
+
 $dogFood = new Food('Felix', 2.50, 3000);
 $dogFood->categoty = $dogCategory;
 var_dump($dogFood);
