@@ -1,8 +1,9 @@
 <?php
 require_once __DIR__ . "/producs.php";
+require_once __DIR__ . "/weightable.php";
 
 class Food extends Producs {
-  private int $weight;
+  use Weightable;
 
   public function __construct($_name, $_price, $_weight) {
     parent::__construct($_name, $_price);

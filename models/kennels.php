@@ -1,8 +1,10 @@
 <?php
 require_once __DIR__ . "/producs.php";
+require_once __DIR__ . "/weightable.php";
 class Kennels extends Producs {
   private string $nameModel;
   private string $material;
+  use Weightable;
 
   public function __construct($_name, $_price, string $_nameModel) {
     parent::__construct($_name, $_price);

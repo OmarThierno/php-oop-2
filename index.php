@@ -28,6 +28,7 @@ var_dump($gameDog);
 $kennel1 = new Kennels('Cuccia super ultra conoda', 120, 'Medello X3');
 $kennel1->categoty = $dogCategory;
 $kennel1->setMaterial("Legno pregato");
+$kennel1->setWeight(2000);
 var_dump($kennel1);
 
 $catalogs = [$dogFood, $catFood, $gameDog, $kennel1];
