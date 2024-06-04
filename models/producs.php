@@ -11,9 +11,21 @@ class Producs {
     $this->price = $_price;
   }
 
-  public function setUserImg($_urlImg) {
+  public function getName() {
+    return $this->name;
+  }
+
+  public function getPrice() {
+    return $this->price;
+  }
+
+  public function setUrlImg($_urlImg) {
     if(str_contains($_urlImg, 'https:')) {
       $this->urlImg = $_urlImg;
     }
+  }
+
+  public function getUrlImg() {
+    return $this->urlImg;
   }
 }
